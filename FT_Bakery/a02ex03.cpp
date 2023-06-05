@@ -24,7 +24,7 @@
 MyBooleanClass * verboseMode       = NULL;
 MyBooleanClass * shortMessageMode  = NULL;
 
-vector<Comida *> myMainList;
+vector<Food *> myMainList;
    
 int main(int argc, char* argv[])
    {
@@ -58,7 +58,7 @@ void clearAll()   // está errada ! corrigir !!!!
    {
    myMainList.clear();
 
-   vector<Comida *>::iterator scan = myMainList.begin();
+   vector<Food *>::iterator scan = myMainList.begin();
    
    while(scan != myMainList.end())
       {
@@ -78,7 +78,7 @@ void listItems()
    double total = 0.00;
       
    cout << "------------------------------\nItems in Database:\n------------------------------\n";
-   vector<Comida *>::iterator scan = myMainList.begin();
+   vector<Food *>::iterator scan = myMainList.begin();
    
    while(scan != myMainList.end())
       {

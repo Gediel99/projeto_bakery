@@ -11,7 +11,7 @@
 
 using namespace std;
 
-Bread::Bread(string tipo, float peso, double valor) : Comida(valor)
+Bread::Bread(string tipo, float peso, double valor) : Food(valor)
    {
    this->tipo = tipo;
    this->peso = peso;

@@ -13,7 +13,7 @@
 
 using namespace std;
 
-class Cracker : public Comida
+class Cracker : public Food
    {
    private:
       string tipo;
