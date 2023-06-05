@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.gradle": "dart",
+        "xstring": "cpp",
+        "vector": "cpp"
+    }
+}

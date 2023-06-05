@@ -115,7 +115,7 @@ void insertItems()
 
 void insertBread()
    {
-   Pao * bread;
+   Bread * bread;
    string buffer;
    string type;
    float  weight;
@@ -127,7 +127,7 @@ void insertBread()
    cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    cin.clear();
    
-   bread = new Pao(type, weight,cost);
+   bread = new Bread(type, weight,cost);
    myMainList.insert(myMainList.end(), bread);
    
    cout << endl << bread->getDescricao() << " - US$ " << fixed << setprecision(2) << bread->getValor() << endl;   
@@ -135,7 +135,7 @@ void insertBread()
    
 void insertCracker()
    {
-   Bolacha * cracker;
+   Cracker * cracker;
    string buffer;
    string type;
    int    amount;
@@ -147,7 +147,7 @@ void insertCracker()
    cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    cin.clear();
    
-   cracker = new Bolacha(type, amount,cost);
+   cracker = new Cracker(type, amount,cost);
    myMainList.insert(myMainList.end(), cracker);
    
    cout << endl << cracker->getDescricao() << " - US$ " << fixed << setprecision(2) << cracker->getValor() << endl;   
@@ -155,7 +155,7 @@ void insertCracker()
 
 void insertFilledWafer()
    {
-   BolachaRecheada * filledWafer;
+   FilledWafer * filledWafer;
    string buffer;
    string type;
    string filling;
@@ -169,7 +169,7 @@ void insertFilledWafer()
    cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    cin.clear();
    
-   filledWafer = new BolachaRecheada(type, filling, amount,cost);
+   filledWafer = new FilledWafer(type, filling, amount,cost);
    myMainList.insert(myMainList.end(), filledWafer);
    
    cout << endl << filledWafer->getDescricao() << " - US$ " << fixed << setprecision(2) << filledWafer->getValor() << endl;   
