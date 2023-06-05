@@ -24,7 +24,7 @@
 MyBooleanClass * verboseMode       = NULL;
 MyBooleanClass * shortMessageMode  = NULL;
 
-vector<Food *> myMainList;
+vector<Comida *> myMainList;
    
 int main(int argc, char* argv[])
    {
@@ -58,7 +58,7 @@ void clearAll()   // está errada ! corrigir !!!!
    {
    myMainList.clear();
 
-   vector<Food *>::iterator scan = myMainList.begin();
+   vector<Comida *>::iterator scan = myMainList.begin();
    
    while(scan != myMainList.end())
       {
@@ -78,7 +78,7 @@ void listItems()
    double total = 0.00;
       
    cout << "------------------------------\nItems in Database:\n------------------------------\n";
-   vector<Food *>::iterator scan = myMainList.begin();
+   vector<Comida *>::iterator scan = myMainList.begin();
    
    while(scan != myMainList.end())
       {
@@ -115,7 +115,7 @@ void insertItems()
 
 void insertBread()
    {
-   Bread * bread;
+   Pao * bread;
    string buffer;
    string type;
    float  weight;
@@ -127,7 +127,7 @@ void insertBread()
    cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    cin.clear();
    
-   bread = new Bread(type, weight,cost);
+   bread = new Pao(type, weight,cost);
    myMainList.insert(myMainList.end(), bread);
    
    cout << endl << bread->getDescricao() << " - US$ " << fixed << setprecision(2) << bread->getValor() << endl;   
@@ -135,7 +135,7 @@ void insertBread()
    
 void insertCracker()
    {
-   Cracker * cracker;
+   Bolacha * cracker;
    string buffer;
    string type;
    int    amount;
@@ -147,7 +147,7 @@ void insertCracker()
    cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    cin.clear();
    
-   cracker = new Cracker(type, amount,cost);
+   cracker = new Bolacha(type, amount,cost);
    myMainList.insert(myMainList.end(), cracker);
    
    cout << endl << cracker->getDescricao() << " - US$ " << fixed << setprecision(2) << cracker->getValor() << endl;   
@@ -155,7 +155,7 @@ void insertCracker()
 
 void insertFilledWafer()
    {
-   FilledWafer * filledWafer;
+   BolachaRecheada * filledWafer;
    string buffer;
    string type;
    string filling;
@@ -169,7 +169,7 @@ void insertFilledWafer()
    cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
    cin.clear();
    
-   filledWafer = new FilledWafer(type, filling, amount,cost);
+   filledWafer = new BolachaRecheada(type, filling, amount,cost);
    myMainList.insert(myMainList.end(), filledWafer);
    
    cout << endl << filledWafer->getDescricao() << " - US$ " << fixed << setprecision(2) << filledWafer->getValor() << endl;   

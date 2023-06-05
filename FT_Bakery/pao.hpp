@@ -5,22 +5,22 @@
    Maio/2015
 */
 
-#ifndef A02EX03_D_H
-   #define A02EX03_D_H
+#ifndef A02EX03_C_H
+   #define A02EX03_C_H
 
 #include <string>
 #include "a02ex03_b.hpp"
 
 using namespace std;
 
-class Cracker : public Food
+class Pao : public Comida
    {
    private:
       string tipo;
-      int    unidades;
+      float peso;
       
    public:
-      Cracker(string, int, double);
+      Pao(string, float, double);
       virtual string getDescricao();
    };
    
