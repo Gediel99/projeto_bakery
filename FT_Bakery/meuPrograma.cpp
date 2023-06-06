@@ -48,21 +48,9 @@ void MyProgram::process()
 
         switch (escolha)
         {
-        case 1:
-        {
-            listItems();
-        };
-        break;
-        case 2:
-        {
-            insertItems();
-        };
-        break;
-        case 3:
-        {
-            clearAll();
-        };
-        break;
+        case 1:{ listItems();   };break;
+        case 2:{ insertItems(); };break;
+        case 3:{ clearAll();    };break;
         };
     };
 };
@@ -115,46 +103,19 @@ void MyProgram::insertItems()
 
         switch (escolha)
         {
-        case 1:
-        {
-            insertBread();
-        };
-        break;
-        case 2:
-        {
-            insertCheese();
-        };
-        break;
-        case 3:
-        {
-            insertCottageCheese();
-        };
-        break;
-        case 4:
-        {
-            insertCracker();
-        };
-        break;
-        case 5:
-        {
-            insertFilledWafer();
-        };
-        break;
-        case 6:
-        {
-            insertHam();
-        };
-        break;
-        case 7:
-        {
-            insertMortadella();
-        };
-        break;
-        case 8:
-        {
-            insertMilk();
-        };
-        break;
+        case 1:{ insertBread();         };break;
+        case 2:{ insertCheese();        };break;
+        case 3:{ insertCottageCheese(); };break;
+        case 4:{ insertCracker();       };break;
+        case 5:{ insertFilledWafer();   };break;
+        case 6:{ insertHam();           };break;
+        case 7:{ insertMortadella();    };break;
+        case 8:{ insertMilk();          };break;
+        case 9:{ insertMilk();          };break;
+        case 10:{ /*insertWater();*/        };break;
+        case 11:{ /*insertSoda();*/         };break;
+        case 12:{ /*insertBeer();*/         };break;
+
         };
     };
 };
