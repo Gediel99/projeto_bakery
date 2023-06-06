@@ -111,13 +111,8 @@ void insertItems()
  	 case 3: { insertCottageCheese();}; break;
  	 case 4: { insertCracker();      }; break;
  	 case 5: { insertFilledWafer();  }; break;
-<<<<<<< HEAD
- 	 case 6: { insertHam();           }; break;
- 	 case 7: {                       }; break;
-=======
- 	 case 6: {                       }; break;
+ 	 case 6: { insertHam();          }; break;
  	 case 7: { insertMortadella();   }; break;
->>>>>>> ee5430a4035aa3e031cfe756ef74344720496044
          };
       };
    };

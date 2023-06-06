@@ -5,8 +5,8 @@
    Maio/2015
 */
 
-#ifndef A02EX03_C_H
-   #define A02EX03_C_H
+#ifndef A02EX03_I_H
+   #define A02EX03_I_H
 
 #include <string>
 #include "comida.hpp"
