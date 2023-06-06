@@ -6,20 +6,20 @@
 */
 
 #include <string>
-#include "a02ex03_b.hpp"
-#include "a02ex03_d.hpp"
+#include "comida.hpp"
+#include "queijo.hpp"
 
 using namespace std;
 
-Cracker::Cracker(string tipo, int unidades, double valor) : Food(valor)
+Cheese::Cheese(string tipo, int unidades, double valor) : Food(valor)
    {
    this->tipo     = tipo;
    this->unidades = unidades;
    };
    
-string Cracker::getDescricao()
+string Cheese::getDescricao()
    { 
-   return ("Bolacha " + tipo + " - " + to_string(unidades) + " un/pacote."); 
+   return ("Queijo " + tipo + " - " + to_string(unidades) + " un/pacote."); 
    };
    
 /* fim de arquivo */
