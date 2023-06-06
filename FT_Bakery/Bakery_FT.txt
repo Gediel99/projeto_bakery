@@ -89,3 +89,11 @@ Lembre-se de colocar os #include's necessários para usar as novas classes.
 
 Bom trabalho.
 
+a02ex03 - main
+a02ex03_e - bolachaRecheada
+a02ex03_d - bolacha
+a02ex03_c - pao
+a02ex03_b - comida
+a02ex03_a - menu
+a02ex01_a - boolean
+a02ex00 - cabecalho

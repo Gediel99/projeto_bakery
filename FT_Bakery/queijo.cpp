@@ -6,8 +6,8 @@
 */
 
 #include <string>
-#include "comida.hpp"
-#include "bolacha.hpp"
+#include "a02ex03_b.hpp"
+#include "a02ex03_d.hpp"
 
 using namespace std;
 

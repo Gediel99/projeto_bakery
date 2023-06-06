@@ -10,14 +10,14 @@
 #include <iostream>
 #include <iomanip> 
 
-#include "a02ex00.hpp"
-#include "a02ex01_a.hpp"
-#include "a02ex03.hpp"
-#include "a02ex03_a.hpp"
-#include "a02ex03_b.hpp"
-#include "a02ex03_c.hpp"
-#include "a02ex03_d.hpp"
-#include "a02ex03_e.hpp"
+#include "cabecalho.hpp"
+#include "boolean.hpp"
+#include "main.hpp"
+#include "menu.hpp"
+#include "comida.hpp"
+#include "pao.hpp"
+#include "bolacha.hpp"
+#include "bolachaRecheada.hpp"
 
 /* DANGER: A LOT OF GLOBAL VARIABLES !!! (OBJECTS & STRUCTURES) */
 

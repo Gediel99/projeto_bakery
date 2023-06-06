@@ -9,7 +9,7 @@
    #define A02EX03_C_H
 
 #include <string>
-#include "a02ex03_b.hpp"
+#include "comida.hpp"
 
 using namespace std;
 

@@ -6,7 +6,7 @@
 */
 
 #include <string>
-#include "a02ex03_b.hpp"
+#include "comida.hpp"
 
 using namespace std;
 
