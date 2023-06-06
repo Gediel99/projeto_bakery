@@ -7,19 +7,19 @@
 
 #include <string>
 #include "comida.hpp"
-#include "pao.hpp"
+#include "presunto.hpp"
 
 using namespace std;
 
-Bread::Bread(string tipo, float peso, double valor) : Food(valor)
+Ham::Ham(string tipo, float peso, double valor) : Food(valor)
    {
    this->tipo = tipo;
    this->peso = peso;
    };
    
-string Bread::getDescricao()
+string Ham::getDescricao()
    { 
-   return ("Pao " + tipo + " - " + to_string(peso) + " Kg."); 
+   return ("Presunto " + tipo + " - " + to_string(peso) + " Kg."); 
    };
    
 /* fim de arquivo */
