@@ -23,6 +23,7 @@
 #include "bolachaRecheada.hpp"
 #include "presunto.hpp"
 #include "meuPrograma.hpp"
+#include "leite.hpp"
 
 using namespace std;
 
@@ -105,7 +106,7 @@ void MyProgram::insertItems()
 {
     cout << "------------------------------\nInset New Items:\n------------------------------\n";
 
-    Menu menu("Insert Items", {"Exit", "Bread", "Cheese", "Cottage Cheese", "Cracker", "Filled Wafer", "Ham", "Mortadella"});
+    Menu menu("Insert Items", {"Exit", "Bread", "Cheese", "Cottage Cheese", "Cracker", "Filled Wafer", "Ham", "Mortadella","Milk"});
     int escolha = -1;
 
     while (escolha)
@@ -147,6 +148,11 @@ void MyProgram::insertItems()
         case 7:
         {
             insertMortadella();
+        };
+        break;
+        case 8:
+        {
+            insertMilk();
         };
         break;
         };
@@ -348,8 +354,33 @@ void MyProgram::insertHam()
          << ham->getDescricao() << " - US$ " << fixed << setprecision(2) << ham->getValor() << endl;
 };
 
+void MyProgram::insertMilk()
+{
+    Milk *milk;
+    string buffer;
+    string type;
+    int amount;
+    string marca;
+    double cost;
 
+    cout << "------------------------------\nInsert Cracker:\n------------------------------\n";
+    cout << "Type ......: ";
+    getline(cin, buffer);
+    type = buffer;
+    cout << "Amount ....: ";
+    getline(cin, buffer);
+    amount = stoi(buffer);
+    cout << "Cost ......: ";
+    getline(cin, buffer);
+    cost = stod(buffer);
+    cin.clear();
 
+    milk = new Milk(type, marca, amount, cost);
+    myMainList.insert(myMainList.end(), milk);
+
+    cout << endl
+         << milk->getDescricao() << " - US$ " << fixed << setprecision(2) << milk->getValor() << endl;
+};
 
 MyProgram::MyProgram()
 {
@@ -357,20 +388,23 @@ MyProgram::MyProgram()
     this->shortMessageMode = NULL;
 }
 
-MyBooleanClass * MyProgram::getVerboseMode () const{
+MyBooleanClass *MyProgram::getVerboseMode() const
+{
     return verboseMode;
 }
 
-MyBooleanClass * MyProgram::setVerboseMode(MyBooleanClass*setVerboseMode){
+MyBooleanClass *MyProgram::setVerboseMode(MyBooleanClass *setVerboseMode)
+{
     this->verboseMode = setVerboseMode;
-}   
+}
 
 MyBooleanClass *MyProgram::getShortMessageMode() const
 {
     return shortMessageMode;
 }
 
-MyBooleanClass * MyProgram::setShortMessageMode(MyBooleanClass*setShortMessageMode){
+MyBooleanClass *MyProgram::setShortMessageMode(MyBooleanClass *setShortMessageMode)
+{
     this->shortMessageMode = setShortMessageMode;
 }
 

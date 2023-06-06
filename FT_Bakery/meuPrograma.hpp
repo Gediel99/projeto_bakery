@@ -24,6 +24,7 @@
         void insertMortadella();
         void insertFilledWafer();
         void insertHam();
+        void insertMilk();
     public:
         MyProgram();
         MyBooleanClass *getVerboseMode(void) const;

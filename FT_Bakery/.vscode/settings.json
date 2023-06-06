@@ -39,7 +39,8 @@
     "*.gradle": "dart",
     "iomanip": "cpp",
     "vector": "cpp",
-    "string": "cpp"
+    "string": "cpp",
+    "iostream": "cpp"
   },
   "C_Cpp.errorSquiggles": "enabled"
 }
