@@ -13,7 +13,6 @@
 
 #include "cabecalho.hpp"
 #include "boolean.hpp"
-#include "main.hpp"
 #include "menu.hpp"
 #include "comida.hpp"
 #include "pao.hpp"
@@ -348,6 +347,8 @@ void MyProgram::insertHam()
     cout << endl
          << ham->getDescricao() << " - US$ " << fixed << setprecision(2) << ham->getValor() << endl;
 };
+
+
 
 
 MyProgram::MyProgram()
