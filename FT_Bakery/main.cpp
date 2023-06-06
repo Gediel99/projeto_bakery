@@ -19,6 +19,7 @@
 #include "bolacha.hpp"
 #include "queijo.hpp"
 #include "queijoCottage.hpp"
+#include "mortadela.hpp"
 #include "bolachaRecheada.hpp"
 
 /* DANGER: A LOT OF GLOBAL VARIABLES !!! (OBJECTS & STRUCTURES) */
@@ -110,7 +111,7 @@ void insertItems()
  	 case 4: { insertCracker();      }; break;
  	 case 5: { insertFilledWafer();  }; break;
  	 case 6: {                       }; break;
- 	 case 7: {                       }; break;
+ 	 case 7: { insertMortadella();   }; break;
          };
       };
    };
@@ -195,6 +196,26 @@ void insertCottageCheese()
    myMainList.insert(myMainList.end(), cottageCheese);
    
    cout << endl << cottageCheese->getDescricao() << " - US$ " << fixed << setprecision(2) << cottageCheese->getValor() << endl;   
+   };
+
+void insertMortadella()
+   {
+   Mortadella * mortadella;
+   string buffer;
+   string type;
+   float  weight;
+   double cost;
+
+   cout << "------------------------------\nInsert Bread:\n------------------------------\n";
+   cout << "Type ......: "; getline(cin, buffer); type   = buffer;
+   cout << "Weight ....: "; getline(cin, buffer); weight = stof(buffer);
+   cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
+   cin.clear();
+   
+   mortadella = new Mortadella(type, weight,cost);
+   myMainList.insert(myMainList.end(), mortadella);
+   
+   cout << endl << mortadella->getDescricao() << " - US$ " << fixed << setprecision(2) << mortadella->getValor() << endl;   
    };
 
 void insertFilledWafer()
