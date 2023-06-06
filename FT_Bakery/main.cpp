@@ -17,6 +17,7 @@
 #include "comida.hpp"
 #include "pao.hpp"
 #include "bolacha.hpp"
+#include "queijo.hpp"
 #include "bolachaRecheada.hpp"
 
 /* DANGER: A LOT OF GLOBAL VARIABLES !!! (OBJECTS & STRUCTURES) */
@@ -103,7 +104,7 @@ void insertItems()
       switch(escolha)
          {
  	 case 1: { insertBread();       }; break;
- 	 case 2: {                      }; break;
+ 	 case 2: { insertCheese();      }; break;
  	 case 3: {                      }; break;
  	 case 4: { insertCracker();     }; break;
  	 case 5: { insertFilledWafer(); }; break;
@@ -132,7 +133,7 @@ void insertBread()
    
    cout << endl << bread->getDescricao() << " - US$ " << fixed << setprecision(2) << bread->getValor() << endl;   
    };
-   
+
 void insertCracker()
    {
    Cracker * cracker;
@@ -151,6 +152,26 @@ void insertCracker()
    myMainList.insert(myMainList.end(), cracker);
    
    cout << endl << cracker->getDescricao() << " - US$ " << fixed << setprecision(2) << cracker->getValor() << endl;   
+   };
+
+void insertCheese()
+   {
+   Cheese * cheese;
+   string buffer;
+   string type;
+   int    amount;
+   double cost;
+
+   cout << "------------------------------\nInsert Cheese:\n------------------------------\n";
+   cout << "Type ......: "; getline(cin, buffer); type   = buffer;
+   cout << "Amount ....: "; getline(cin, buffer); amount = stoi(buffer);
+   cout << "Cost ......: "; getline(cin, buffer); cost   = stod(buffer);
+   cin.clear();
+   
+   cheese = new Cheese(type, amount,cost);
+   myMainList.insert(myMainList.end(), cheese);
+   
+   cout << endl << cheese->getDescricao() << " - US$ " << fixed << setprecision(2) << cheese->getValor() << endl;   
    };
 
 void insertFilledWafer()
@@ -191,6 +212,5 @@ void verifyArguments(int argc, char* argv[])
    
    if(!verboseMode)                    { verboseMode      = new MyBooleanClass();     };  // default is false
    if(!shortMessageMode)               { shortMessageMode = new MyBooleanClass();     };  // default is false
-   }
-
+   };
 /* fim de arquivo */
