@@ -42,7 +42,7 @@ int main(int argc, char* argv[])
 
 void process()
    {
-   vector<string> opcoes({ "Exit", "List Database", "Insert Items" });
+   vector<string> opcoes({ "Exit", "List Database", "Insert Items","Clear All" });
    Menu menu("Main Menu", opcoes);
    int escolha = -1;
    
@@ -54,6 +54,7 @@ void process()
          {
  	 case 1: { listItems();    }; break;
  	 case 2: { insertItems();  }; break;
+    case 3: { clearAll();  }; break;
          };
       };
    };

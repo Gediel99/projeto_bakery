@@ -51,11 +51,11 @@ Lembre-se de colocar os #include's necessários para usar as novas classes.
 
 --OK--13. Insira apropriadamente as chamadas aos novos métodos para que o menu de inserção de itens funcione completamente.
 
-14. Veja que é possível listar a base de dados já com novos itens, SEM ALTERAR o código de void listItems(). Entenda como o polimorfismo proporcionou esta possibilidade e examine a função em detalhes até ter certeza de compreendê-la.
+--OK--14. Veja que é possível listar a base de dados já com novos itens, SEM ALTERAR o código de void listItems(). Entenda como o polimorfismo proporcionou esta possibilidade e examine a função em detalhes até ter certeza de compreendê-la.
 
-15. Estude todos os elementos desta linha: cout << "  @ " << setw(20) << (*scan)->getDescricao() << "\n\tUS$ " << fixed << setprecision(2) << (*scan)->getValor() << endl;
+--OK--5. Estude todos os elementos desta linha: cout << "  @ " << setw(20) << (*scan)->getDescricao() << "\n\tUS$ " << fixed << setprecision(2) << (*scan)->getValor() << endl;
 
-16. Estude a função void clearAll(). ELA ESTÁ ERRADA. Localize e corrija o erro.
+--OK--16. Estude a função void clearAll(). ELA ESTÁ ERRADA. Localize e corrija o erro. //Depois adicionar feedback e chamar listItens()
 
 17. Todas as funções que estão em a02ex03.cpp são iguais às da programação estruturada, no sentido de que não pertencem a classes (não são métodos). Assim, o programa é um "C com classes" mais que "orientado a objetos". Reverta esta situação da seguinte maneira:
 
