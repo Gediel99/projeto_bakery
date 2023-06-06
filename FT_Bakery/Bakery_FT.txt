@@ -73,7 +73,7 @@ Lembre-se de colocar os #include's necessários para usar as novas classes.
 
 --OK--24. Na função main (que agora está SÓ em FT_bakery), crie DINAMICAMENTE um objeto MyProgram, use os set's para ajustar verboseMode e shortMessageMode e chame start. Dessa forma, todo o processamento ficará a cargo do objeto e não de funções soltas.
 
-25. A padaria vai começar a vender leite, água, refrigerante e cerveja. Crie uma classe "Liquid", derivada de "Food" com os atributos comuns a todos estes novos produtos.
+--OK--25. A padaria vai começar a vender leite, água, refrigerante e cerveja. Crie uma classe "Liquid", derivada de "Food" com os atributos comuns a todos estes novos produtos.
 
 26. Crie as classes "Milk", "Water", "Soda" e "Beer". Crie também 4 derivadas de Beer, correspondentes a diferentes tipos de cerveja.
 

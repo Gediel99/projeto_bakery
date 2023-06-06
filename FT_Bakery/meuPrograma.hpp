@@ -27,6 +27,11 @@
         void insertMilk();
         void insertWater();
         void insertSoda();
+        void insertBeer();
+        void insertBeer1();
+        void insertBeer2();
+        void insertBeer3();
+        void insertBeer4();
     public:
         MyProgram();
         MyBooleanClass *getVerboseMode(void) const;

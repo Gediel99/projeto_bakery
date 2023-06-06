@@ -97,7 +97,7 @@ void MyProgram::insertItems()
 {
     cout << "------------------------------\nInset New Items:\n------------------------------\n";
 
-    Menu menu("Insert Items", {"Exit", "Bread", "Cheese", "Cottage Cheese", "Cracker", "Filled Wafer", "Ham", "Mortadella","Milk","Water","Soda"/*"Beer"*/});
+    Menu menu("Insert Items", {"Exit", "Bread", "Cheese", "Cottage Cheese", "Cracker", "Filled Wafer", "Ham", "Mortadella","Milk","Water","Soda","Beer"});
     int escolha = -1;
 
     while (escolha)
@@ -116,7 +116,7 @@ void MyProgram::insertItems()
         case 8:{ insertMilk();          };break;
         case 9:{ insertWater();         };break;
         case 10:{ insertSoda();         };break;
-        case 11:{ /*insertBeer();*/         };break;
+        case 11:{ insertBeer();         };break;
 
         };
     };
@@ -378,6 +378,146 @@ void MyProgram::insertWater()
 };
 
 void MyProgram::insertSoda()
+{
+    Soda *soda;
+    string buffer;
+    string type;
+    int amount;
+    string marca;
+    double cost;
+
+    cout << "------------------------------\nInsert Soda:\n------------------------------\n";
+    cout << "Type ......: ";
+    getline(cin, buffer);
+    type = buffer;
+    cout << "Marca ....: ";
+    getline(cin, buffer);
+    marca = buffer;
+    cout << "Amount ....: ";
+    getline(cin, buffer);
+    amount = stoi(buffer);
+    cout << "Cost ......: ";
+    getline(cin, buffer);
+    cost = stod(buffer);
+    cin.clear();
+
+    soda = new Soda(type, marca, amount, cost);
+    myMainList.insert(myMainList.end(), soda);
+
+    cout <<endl<< soda->getDescricao() << " - US$ " << fixed << setprecision(2) << soda->getValor() << endl;
+};
+
+void MyProgram::insertBeer()
+{
+    vector<string> opcoes({"Cerveja1", "Cerveja2", "Cerveja3", "Cerveja4"});
+    Menu menu("Main Menu", opcoes);
+    int escolha = -1;
+
+    while (escolha)
+    {
+        escolha = menu.getEscolha();
+
+        switch (escolha)
+        {
+        case 1:{ insertBeer1();   };break;
+        case 2:{ insertBeer2();   };break;
+        case 3:{ insertBeer3();   };break;
+        case 4:{ insertBeer4();   };break;
+        };
+    };
+};
+
+void MyProgram::insertBeer1()
+{
+    Soda *soda;
+    string buffer;
+    string type;
+    int amount;
+    string marca;
+    double cost;
+
+    cout << "------------------------------\nInsert Soda:\n------------------------------\n";
+    cout << "Type ......: ";
+    getline(cin, buffer);
+    type = buffer;
+    cout << "Marca ....: ";
+    getline(cin, buffer);
+    marca = buffer;
+    cout << "Amount ....: ";
+    getline(cin, buffer);
+    amount = stoi(buffer);
+    cout << "Cost ......: ";
+    getline(cin, buffer);
+    cost = stod(buffer);
+    cin.clear();
+
+    soda = new Soda(type, marca, amount, cost);
+    myMainList.insert(myMainList.end(), soda);
+
+    cout <<endl<< soda->getDescricao() << " - US$ " << fixed << setprecision(2) << soda->getValor() << endl;
+};
+
+void MyProgram::insertBeer2()
+{
+    Soda *soda;
+    string buffer;
+    string type;
+    int amount;
+    string marca;
+    double cost;
+
+    cout << "------------------------------\nInsert Soda:\n------------------------------\n";
+    cout << "Type ......: ";
+    getline(cin, buffer);
+    type = buffer;
+    cout << "Marca ....: ";
+    getline(cin, buffer);
+    marca = buffer;
+    cout << "Amount ....: ";
+    getline(cin, buffer);
+    amount = stoi(buffer);
+    cout << "Cost ......: ";
+    getline(cin, buffer);
+    cost = stod(buffer);
+    cin.clear();
+
+    soda = new Soda(type, marca, amount, cost);
+    myMainList.insert(myMainList.end(), soda);
+
+    cout <<endl<< soda->getDescricao() << " - US$ " << fixed << setprecision(2) << soda->getValor() << endl;
+};
+
+void MyProgram::insertBeer3()
+{
+    Soda *soda;
+    string buffer;
+    string type;
+    int amount;
+    string marca;
+    double cost;
+
+    cout << "------------------------------\nInsert Soda:\n------------------------------\n";
+    cout << "Type ......: ";
+    getline(cin, buffer);
+    type = buffer;
+    cout << "Marca ....: ";
+    getline(cin, buffer);
+    marca = buffer;
+    cout << "Amount ....: ";
+    getline(cin, buffer);
+    amount = stoi(buffer);
+    cout << "Cost ......: ";
+    getline(cin, buffer);
+    cost = stod(buffer);
+    cin.clear();
+
+    soda = new Soda(type, marca, amount, cost);
+    myMainList.insert(myMainList.end(), soda);
+
+    cout <<endl<< soda->getDescricao() << " - US$ " << fixed << setprecision(2) << soda->getValor() << endl;
+};
+
+void MyProgram::insertBeer4()
 {
     Soda *soda;
     string buffer;
