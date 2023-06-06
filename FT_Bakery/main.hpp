@@ -22,6 +22,7 @@ using namespace std;
    void insertMortadella(void);
    void insertCracker(void);
    void insertFilledWafer(void);
+   void insertHam(void);
    
    
 #endif

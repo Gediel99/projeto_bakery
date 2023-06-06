@@ -5,25 +5,21 @@
    Maio/2015
 */
 
-#ifndef A02EX03_D_H
-#define A02EX03_D_H
-
 #include <string>
 #include "comida.hpp"
+#include "pao.hpp"
 
 using namespace std;
 
-class Cracker : public Food
+Bread::Bread(string tipo, float peso, double valor) : Food(valor)
    {
-   private:
-      string tipo;
-      int    unidades;
-      
-   public:
-      Cracker(string, int, double);
-      virtual string getDescricao();
+   this->tipo = tipo;
+   this->peso = peso;
    };
    
-#endif
+string Bread::getDescricao()
+   { 
+   return ("Pao " + tipo + " - " + to_string(peso) + " Kg."); 
+   };
    
 /* fim de arquivo */
