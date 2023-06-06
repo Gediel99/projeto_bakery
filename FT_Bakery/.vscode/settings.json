@@ -40,7 +40,10 @@
     "iomanip": "cpp",
     "vector": "cpp",
     "string": "cpp",
-    "iostream": "cpp"
+    "iostream": "cpp",
+    "initializer_list": "cpp",
+    "xstring": "cpp",
+    "xutility": "cpp"
   },
   "C_Cpp.errorSquiggles": "enabled"
 }

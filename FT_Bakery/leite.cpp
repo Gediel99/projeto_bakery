@@ -12,7 +12,7 @@ Milk::Milk(string tipo, string marca, int unidades, double valor) : Liquid(unida
    
 string Milk::getDescricao()
    { 
-   return ("Leite " + tipo + " - "); 
+   return ("Leite " + tipo + " - " + marca + " - " + Liquid::getDescricao()); 
    };
    
 /* fim de arquivo */

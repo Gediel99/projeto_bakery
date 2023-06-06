@@ -13,5 +13,5 @@ Soda::Soda(string tipo, string marca, int unidades, double valor) : Liquid(unida
 
 string Soda::getDescricao()
 {
-    return ("Refrigerante "+ tipo +" - " + marca);
+    return ("Refrigerante "+ tipo +" - " + marca + " - " + Liquid::getDescricao());
 };
