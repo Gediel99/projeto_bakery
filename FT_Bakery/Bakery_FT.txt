@@ -38,9 +38,9 @@ a02ex03.hpp
 
 --OK--10. Examine os códigos (hpp e cpp) das classes "Comida", "Bolacha", "Bolacha Recheada" e "Pão". Para coerência com o programa, altere seus nomes, respectivamente para "Food", "Cracker", "Filled Wafer" e "Bread". Altere todo o código que for necessário para isto.
 
-11. Use as classes "Food", "Bread", "Cracker", "Filled Wafer" como base conceitual e crie as classes "Cheese", "Cottage Cheese", "Ham" e "Mortadella". "Cottage Cheese" deriva-se de "Cheese"; todas as demais, de "Food".
+--OK--11. Use as classes "Food", "Bread", "Cracker", "Filled Wafer" como base conceitual e crie as classes "Cheese", "Cottage Cheese", "Ham" e "Mortadella". "Cottage Cheese" deriva-se de "Cheese"; todas as demais, de "Food".
 
-12. Altere o programa criando os métodos:
+--OK--12. Altere o programa criando os métodos:
 
 void insertCheese(void);
 void insertCottageCheese(void);
@@ -49,7 +49,7 @@ void insertMortadella(void);
 
 Lembre-se de colocar os #include's necessários para usar as novas classes.
 
-13. Insira apropriadamente as chamadas aos novos métodos para que o menu de inserção de itens funcione completamente.
+--OK--13. Insira apropriadamente as chamadas aos novos métodos para que o menu de inserção de itens funcione completamente.
 
 14. Veja que é possível listar a base de dados já com novos itens, SEM ALTERAR o código de void listItems(). Entenda como o polimorfismo proporcionou esta possibilidade e examine a função em detalhes até ter certeza de compreendê-la.
 
