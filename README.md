@@ -12,7 +12,7 @@ O sistema possui as seguintes funcionalidades:
 4. Interação com outros produtos: além dos itens básicos, é possível adicionar queijos, queijos cottage, presuntos, mortadelas, leite, água, refrigerante e cerveja (com diferentes tipos) ao estoque.
 5. Gerenciamento de líquidos: foram adicionadas funcionalidades para controle de leite, água, refrigerante e cerveja, incluindo diferentes tipos de cerveja.
 
-## Utilização
+## Passo a passo para realização da atividade
 
 Para utilizar o sistema, siga as instruções abaixo:
 
@@ -76,4 +76,4 @@ Este programa foi desenvolvido como uma solução simples para o controle de est
 Contribuições para a melhoria deste projeto são sempre bem-vindas. Sinta-se à vontade para abrir uma issue ou enviar um pull request com sugestões, correções ou adições.
 
 ## Autores
-O projeto Bakery foi desenvolvido por [Gediel](https://github.com/Gediel99), [Filipe](https://github.com/FilipeJN), [Brenno](https://github.com/brennocm), [Lucas](https://github.com/exemplo) e [Pedro](https://github.com/cocronut). Agradecemos a todos que contribuíram para a criação e aprimoramento deste sistema de controle de estoque.
+O projeto Bakery foi desenvolvido por [Gediel](https://github.com/Gediel99), [Filipe](https://github.com/FilipeJN), [Brenno](https://github.com/brennocm), [Lucas](https://github.com/LucasKau3) e [Pedro](https://github.com/cocronut). Agradecemos a todos que contribuíram para a criação e aprimoramento deste sistema de controle de estoque.
