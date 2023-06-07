@@ -43,7 +43,11 @@
     "iostream": "cpp",
     "initializer_list": "cpp",
     "xstring": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "ios": "cpp",
+    "atomic": "cpp",
+    "system_error": "cpp",
+    "xiosbase": "cpp"
   },
   "C_Cpp.errorSquiggles": "enabled"
 }

@@ -27,7 +27,7 @@
         void insertMilk();
         void insertWater();
         void insertSoda();
-        void insertBeer();
+        void insertBeerItens();
         void insertBeer1();
         void insertBeer2();
         void insertBeer3();
