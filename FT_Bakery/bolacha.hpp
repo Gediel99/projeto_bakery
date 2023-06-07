@@ -8,7 +8,7 @@
 */
 
 #ifndef BOLHACHA_H
-#define BOLHACHA_D_H
+#define BOLHACHA_H
 
 #include <string>
 #include "comida.hpp"
