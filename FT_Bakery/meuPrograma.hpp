@@ -1,3 +1,12 @@
+/* Unicamp - Universidade Estadual de Campinas
+    FT - Faculdade de Tecnologia
+    Limeira - SP
+    Criado por - Prof. Dr. Luciano Antonio Digiampietri
+    Mar/2016
+    Modificado por - Grupo A02 (Integrantes - Gediel, Filipe, Brenno, Pedro e Lucas)
+    Jul/2023
+*/
+
 #ifndef MYPROGRAM_H
     #define MYPROGRAM_H
 
@@ -44,3 +53,4 @@
     
 
 #endif
+/* fim de arquivo */

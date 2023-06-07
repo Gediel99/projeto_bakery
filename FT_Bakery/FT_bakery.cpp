@@ -1,3 +1,9 @@
+/* Unicamp - Universidade Estadual de Campinas
+    FT - Faculdade de Tecnologia
+    Limeira - SP
+    Criado por - Grupo A02 (Integrantes - Gediel, Filipe, Brenno, Pedro e Lucas)
+    Jul/2023
+*/
 
 #include <string>
 #include <vector>
@@ -50,3 +56,5 @@ void verifyArguments(int argc, char *argv[], MyProgram *myProgram)
       myProgram->setShortMessageMode(new MyBooleanClass());
    }; // default is false
 };
+
+/* fim de arquivo */
