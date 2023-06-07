@@ -37,10 +37,10 @@
         void insertWater();
         void insertSoda();
         void insertBeerItens();
-        void insertBeerPilsen();
-        void insertBeerLager();
-        void insertBeerIpa();
-        void insertBeerSour();
+        void insertPilsenBeer();
+        void insertLagerBeer(); 
+        void insertIpaBeer(); 
+        void insertSourBeer();
     public:
         MyProgram();
         MyBooleanClass *getVerboseMode(void) const;

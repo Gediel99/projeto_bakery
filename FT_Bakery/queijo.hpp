@@ -17,7 +17,7 @@ class Cheese : public Food
    {
    private:
       string tipo;
-      int    unidades;
+      int unidades;
       
    public:
       Cheese(string, int, double);

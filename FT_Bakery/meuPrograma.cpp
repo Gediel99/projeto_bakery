@@ -212,15 +212,12 @@ void MyProgram::insertCottageCheese()
 {
     CottageCheese *cottageCheese;
     string buffer;
-    string type;
+    string type = "Cottage";
     int amount;
     double cost;
     string marca;
 
     cout << "------------------------------\nInsert Cottage Cheese:\n------------------------------\n";
-    cout << "Type ......: ";
-    getline(cin, buffer);
-    type = buffer;
     cout << "Marca .....: ";
     getline(cin, buffer);
     marca = buffer;
@@ -414,7 +411,7 @@ void MyProgram::insertSoda()
 
 void MyProgram::insertBeerItens()
 {
-    vector<string> opcoes({"Exit","Cerveja1", "Cerveja2", "Cerveja3", "Cerveja4"});
+    vector<string> opcoes({"Exit","Pilsen Beer", "Lager Beer", "Ipa Beer", "Sour Beer"});
     Menu menu("Main Menu", opcoes);
     int escolha = -1;
 
@@ -424,15 +421,15 @@ void MyProgram::insertBeerItens()
 
         switch (escolha)
         {
-        case 1:{ insertBeerPilsen();   };break;
-        case 2:{ insertBeerLager();   };break;
-        case 3:{ insertBeerIpa();   };break;
-        case 4:{ insertBeerSour();   };break;
+        case 1:{ insertPilsenBeer();   };break;
+        case 2:{ insertLagerBeer();    };break;
+        case 3:{ insertIpaBeer();      };break;
+        case 4:{ insertSourBeer();     };break;
         };
     };
 };
 
-void MyProgram::insertBeerPilsen()
+void MyProgram::insertPilsenBeer()
 {
     BeerPilsen *beerPilsen;
     string buffer;
@@ -459,7 +456,7 @@ void MyProgram::insertBeerPilsen()
     cout <<endl<< beerPilsen->getDescricao() << " - US$ " << fixed << setprecision(2) << beerPilsen->getValor() << endl;
 };
 
-void MyProgram::insertBeerLager()
+void MyProgram::insertLagerBeer()
 {
     BeerLager *beerLager;
     string buffer;
@@ -486,7 +483,7 @@ void MyProgram::insertBeerLager()
     cout <<endl<< beerLager->getDescricao() << " - US$ " << fixed << setprecision(2) << beerLager->getValor() << endl;
 };
 
-void MyProgram::insertBeerIpa()
+void MyProgram::insertIpaBeer()
 {
     BeerIpa *beerIpa;
     string buffer;
@@ -513,7 +510,7 @@ void MyProgram::insertBeerIpa()
     cout <<endl<< beerIpa->getDescricao() << " - US$ " << fixed << setprecision(2) << beerIpa->getValor() << endl;
 };
 
-void MyProgram::insertBeerSour()
+void MyProgram::insertSourBeer()
 {
     BeerSour *beerSour;
     string buffer;
