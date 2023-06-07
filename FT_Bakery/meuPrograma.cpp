@@ -28,10 +28,10 @@
 #include "agua.hpp"
 #include "refri.hpp"
 #include "cerveja.hpp"
-#include "cerva1.hpp"
-#include "cerva2.hpp"
-#include "cerva3.hpp"
-#include "cerva4.hpp"
+#include "cervejaPilsen.hpp"
+#include "cervejaLager.hpp"
+#include "cervejaIpa.hpp"
+#include "cervejaSour.hpp"
 
 using namespace std;
 
@@ -424,17 +424,17 @@ void MyProgram::insertBeerItens()
 
         switch (escolha)
         {
-        case 1:{ insertBeer1();   };break;
-        case 2:{ insertBeer2();   };break;
-        case 3:{ insertBeer3();   };break;
-        case 4:{ insertBeer4();   };break;
+        case 1:{ insertBeerPilsen();   };break;
+        case 2:{ insertBeerLager();   };break;
+        case 3:{ insertBeerIpa();   };break;
+        case 4:{ insertBeerSour();   };break;
         };
     };
 };
 
-void MyProgram::insertBeer1()
+void MyProgram::insertBeerPilsen()
 {
-    Beer1 *beer1;
+    BeerPilsen *beerPilsen;
     string buffer;
     string type;
     int amount;
@@ -453,15 +453,15 @@ void MyProgram::insertBeer1()
     cost = stod(buffer);
     cin.clear();
 
-    beer1 = new Beer1(type, marca, amount, cost);
-    myMainList.insert(myMainList.end(), beer1);
+    beerPilsen = new BeerPilsen(type, marca, amount, cost);
+    myMainList.insert(myMainList.end(), beerPilsen);
 
-    cout <<endl<< beer1->getDescricao() << " - US$ " << fixed << setprecision(2) << beer1->getValor() << endl;
+    cout <<endl<< beerPilsen->getDescricao() << " - US$ " << fixed << setprecision(2) << beerPilsen->getValor() << endl;
 };
 
-void MyProgram::insertBeer2()
+void MyProgram::insertBeerLager()
 {
-    Beer2 *beer2;
+    BeerLager *beerLager;
     string buffer;
     string type;
     int amount;
@@ -480,15 +480,15 @@ void MyProgram::insertBeer2()
     cost = stod(buffer);
     cin.clear();
 
-    beer2 = new Beer2(type, marca, amount, cost);
-    myMainList.insert(myMainList.end(), beer2);
+    beerLager = new BeerLager(type, marca, amount, cost);
+    myMainList.insert(myMainList.end(), beerLager);
 
-    cout <<endl<< beer2->getDescricao() << " - US$ " << fixed << setprecision(2) << beer2->getValor() << endl;
+    cout <<endl<< beerLager->getDescricao() << " - US$ " << fixed << setprecision(2) << beerLager->getValor() << endl;
 };
 
-void MyProgram::insertBeer3()
+void MyProgram::insertBeerIpa()
 {
-    Beer3 *beer3;
+    BeerIpa *beerIpa;
     string buffer;
     string type;
     int amount;
@@ -507,15 +507,15 @@ void MyProgram::insertBeer3()
     cost = stod(buffer);
     cin.clear();
 
-    beer3 = new Beer3(type, marca, amount, cost);
-    myMainList.insert(myMainList.end(), beer3);
+    beerIpa = new BeerIpa(type, marca, amount, cost);
+    myMainList.insert(myMainList.end(), beerIpa);
 
-    cout <<endl<< beer3->getDescricao() << " - US$ " << fixed << setprecision(2) << beer3->getValor() << endl;
+    cout <<endl<< beerIpa->getDescricao() << " - US$ " << fixed << setprecision(2) << beerIpa->getValor() << endl;
 };
 
-void MyProgram::insertBeer4()
+void MyProgram::insertBeerSour()
 {
-    Beer4 *beer4;
+    BeerSour *beerSour;
     string buffer;
     string type;
     int amount;
@@ -534,10 +534,10 @@ void MyProgram::insertBeer4()
     cost = stod(buffer);
     cin.clear();
 
-    beer4 = new Beer4(type, marca, amount, cost);
-    myMainList.insert(myMainList.end(), beer4);
+    beerSour = new BeerSour(type, marca, amount, cost);
+    myMainList.insert(myMainList.end(), beerSour);
 
-    cout <<endl<< beer4->getDescricao() << " - US$ " << fixed << setprecision(2) << beer4->getValor() << endl;
+    cout <<endl<< beerSour->getDescricao() << " - US$ " << fixed << setprecision(2) << beerSour->getValor() << endl;
 };
 
 MyProgram::MyProgram()
