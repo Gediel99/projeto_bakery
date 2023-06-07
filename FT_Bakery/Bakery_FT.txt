@@ -53,7 +53,7 @@ Lembre-se de colocar os #include's necessários para usar as novas classes.
 
 --OK--14. Veja que é possível listar a base de dados já com novos itens, SEM ALTERAR o código de void listItems(). Entenda como o polimorfismo proporcionou esta possibilidade e examine a função em detalhes até ter certeza de compreendê-la.
 
---OK--5. Estude todos os elementos desta linha: cout << "  @ " << setw(20) << (*scan)->getDescricao() << "\n\tUS$ " << fixed << setprecision(2) << (*scan)->getValor() << endl;
+--OK--15. Estude todos os elementos desta linha: cout << "  @ " << setw(20) << (*scan)->getDescricao() << "\n\tUS$ " << fixed << setprecision(2) << (*scan)->getValor() << endl;
 
 --OK--16. Estude a função void clearAll(). ELA ESTÁ ERRADA. Localize e corrija o erro. //Depois adicionar feedback e chamar listItens()
 
@@ -75,9 +75,9 @@ Lembre-se de colocar os #include's necessários para usar as novas classes.
 
 --OK--25. A padaria vai começar a vender leite, água, refrigerante e cerveja. Crie uma classe "Liquid", derivada de "Food" com os atributos comuns a todos estes novos produtos.
 
-26. Crie as classes "Milk", "Water", "Soda" e "Beer". Crie também 4 derivadas de Beer, correspondentes a diferentes tipos de cerveja.
+--OK--26. Crie as classes "Milk", "Water", "Soda" e "Beer". Crie também 4 derivadas de Beer, correspondentes a diferentes tipos de cerveja.
 
-27. Altere MyProgram para acomodar estes novos produtos. No menu de inserção, ao escolher "Beer", um novo submenu deve ser aberto, somente com os tipos de cerveja. Faça o código conforme a estrutura já fornecida (veja como é aberto um submenu, ...).
+--OK--27. Altere MyProgram para acomodar estes novos produtos. No menu de inserção, ao escolher "Beer", um novo submenu deve ser aberto, somente com os tipos de cerveja. Faça o código conforme a estrutura já fornecida (veja como é aberto um submenu, ...).
 
 28. Veja que é possível continuar com o programa SEM ALTERAR o código de void listItems() e de void clearAll().
 

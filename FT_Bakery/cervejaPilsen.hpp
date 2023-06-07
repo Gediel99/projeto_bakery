@@ -5,18 +5,18 @@
     Jul/2023
 */
 
-#ifndef CERVA1_H
-    #define CERVA1_H
+#ifndef BEERPILSEN_H
+    #define BEERPILSEN_H
 
 #include <string>
 #include "cerveja.hpp"
 
-class Beer1 : public Beer
+class BeerPilsen : public Beer
     {   
         private:
             string tipo;
         public:
-            Beer1(string,string,int,double);
+            BeerPilsen(string,string,int,double);
             virtual string getDescricao();
     };
 

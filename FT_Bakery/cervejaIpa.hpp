@@ -5,18 +5,18 @@
     Jul/2023
 */
 
-#ifndef CERVA3_H
-    #define CERVA3_H
+#ifndef BEERIPA_H
+    #define BEEIPA_H
 
 #include <string>
 #include "cerveja.hpp"
 
-class Beer3 : public Beer
+class BeerIpa : public Beer
     {   
         private:
             string tipo;
         public:
-            Beer3(string,string,int,double);
+            BeerIpa(string,string,int,double);
             virtual string getDescricao();
     };
 

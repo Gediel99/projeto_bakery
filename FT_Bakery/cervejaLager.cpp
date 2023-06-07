@@ -8,16 +8,16 @@
 #include <string>
 
 #include "cerveja.hpp"
-#include "cerva3.hpp"
+#include "cervejaLager.hpp"
 
 using namespace std;
 
-Beer3::Beer3(string tipo, string marca, int unidades, double valor) : Beer(marca,unidades,valor)
+BeerLager::BeerLager(string tipo, string marca, int unidades, double valor) : Beer(marca,unidades,valor)
     {
-        this->tipo = "Cerveja3";
+        this->tipo = "Lager";
     };
 
-string Beer3::getDescricao()
+string BeerLager::getDescricao()
     {
         return (tipo + " - " + Beer::getDescricao());
     };
