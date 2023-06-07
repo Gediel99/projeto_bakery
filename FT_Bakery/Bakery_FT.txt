@@ -79,7 +79,7 @@ Lembre-se de colocar os #include's necessários para usar as novas classes.
 
 --OK--27. Altere MyProgram para acomodar estes novos produtos. No menu de inserção, ao escolher "Beer", um novo submenu deve ser aberto, somente com os tipos de cerveja. Faça o código conforme a estrutura já fornecida (veja como é aberto um submenu, ...).
 
-28. Veja que é possível continuar com o programa SEM ALTERAR o código de void listItems() e de void clearAll().
+--OK--28. Veja que é possível continuar com o programa SEM ALTERAR o código de void listItems() e de void clearAll().
 
 29. Faça a limpeza do código: elimine #include's desnecessários, acerte formatação, apague todos os trechos de código comentado (não os comentários de documentação), ordene os métodos e verifique se os escopos de visibilidade estão adequados.
 
