@@ -5,8 +5,8 @@
     Jul/2023
 */
 
-#ifndef A02EX03_H
-   #define A02EX03_H
+#ifndef PADARIA_H
+   #define PADARIA_H
 
    #include "meuPrograma.hpp"
    using namespace std;

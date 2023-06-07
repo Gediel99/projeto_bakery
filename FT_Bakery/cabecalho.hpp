@@ -5,8 +5,8 @@
    Mar/2016
 */
 
-#ifndef A02EX00_H
-   #define A02EX00_H
+#ifndef CABECALHO_H
+   #define CABECALHO_H
 
 using namespace std;
    

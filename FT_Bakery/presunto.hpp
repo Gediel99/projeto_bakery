@@ -5,8 +5,8 @@
     Jul/2023
 */
 
-#ifndef A02EX03_H_H
-   #define A02EX03_H_H
+#ifndef PRESUNTO_H
+   #define PRESUNTO_H
 
 #include <string>
 #include "comida.hpp"

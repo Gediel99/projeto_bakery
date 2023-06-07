@@ -7,8 +7,8 @@
     Jul/2023
 */
 
-#ifndef A02EX03_C_H
-   #define A02EX03_C_H
+#ifndef PAO_H
+   #define PAO_H
 
 #include <string>
 #include "comida.hpp"

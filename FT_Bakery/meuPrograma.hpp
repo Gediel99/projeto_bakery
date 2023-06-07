@@ -7,8 +7,8 @@
     Jul/2023
 */
 
-#ifndef MYPROGRAM_H
-    #define MYPROGRAM_H
+#ifndef MEUPROGRAMA_H
+    #define MEUPROGRAMA_H
 
     #include "boolean.hpp"
     #include <vector>

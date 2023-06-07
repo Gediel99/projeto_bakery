@@ -5,8 +5,8 @@
     Jul/2023
 */
 
-#ifndef A02EX03_F_H
-   #define A02EX03_F_H
+#ifndef QUEIJO_H
+   #define QUEIJO_H
 
 #include <string>
 #include "comida.hpp"

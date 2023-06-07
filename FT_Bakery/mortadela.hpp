@@ -5,8 +5,8 @@
     Jul/2023
 */
 
-#ifndef A02EX03_I_H
-   #define A02EX03_I_H
+#ifndef MORTADELA_H
+   #define MORTADELA_H
 
 #include <string>
 #include "comida.hpp"

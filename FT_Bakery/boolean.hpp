@@ -9,8 +9,8 @@
 
 using namespace std;
 
-#ifndef A02EX01_A_H
-   #define A02EX01_A_H
+#ifndef BOOLEAN_H
+   #define BOOLEAN_H
 
 class MyBooleanClass
    {

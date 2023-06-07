@@ -7,8 +7,8 @@
     Jul/2023
 */
 
-#ifndef A02EX03_B_H
-   #define A02EX03_B_H
+#ifndef COMIDA_H
+   #define COMIDA_H
 
 #include <string>
 

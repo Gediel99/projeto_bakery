@@ -5,8 +5,8 @@
     Jul/2023
 */
 
-#ifndef A02EX03_G_H
-   #define A02EX03_G_H
+#ifndef QUEIJOCOTTAGE_H
+   #define QUEIJOCOTTAGE_H
 
 #include <string>
 #include "queijo.hpp"

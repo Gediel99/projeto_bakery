@@ -7,8 +7,8 @@
     Jul/2023
 */
 
-#ifndef A02EX03_E_H
-   #define A02EX03_E_H
+#ifndef BOLHACHARECHEADA_H
+   #define BOLHACHARECHEADA_H
 
 #include <string>
 #include "bolacha.hpp"
