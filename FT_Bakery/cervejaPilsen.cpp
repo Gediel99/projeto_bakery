@@ -19,7 +19,7 @@ BeerPilsen::BeerPilsen(string tipo, string marca, int unidades, double valor) : 
 
 string BeerPilsen::getDescricao()
     {
-        return (tipo + " - " + Beer::getDescricao());
+        return ("Cerveja " + tipo + " - " + Beer::getDescricao());
     };
 
 /* fim de arquivo */

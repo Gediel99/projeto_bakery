@@ -17,10 +17,11 @@ class Cheese : public Food
    {
    private:
       string tipo;
-      int unidades;
+      string marca;
+      float peso;
       
    public:
-      Cheese(string, int, double);
+      Cheese(string, string, float, double);
       virtual string getDescricao();
    };
    

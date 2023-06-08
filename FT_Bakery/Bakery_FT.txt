@@ -81,7 +81,7 @@ Lembre-se de colocar os #include's necessários para usar as novas classes.
 
 --OK--28. Veja que é possível continuar com o programa SEM ALTERAR o código de void listItems() e de void clearAll().
 
-29. Faça a limpeza do código: elimine #include's desnecessários, acerte formatação, apague todos os trechos de código comentado (não os comentários de documentação), ordene os métodos e verifique se os escopos de visibilidade estão adequados.
+--OK--29. Faça a limpeza do código: elimine #include's desnecessários, acerte formatação, apague todos os trechos de código comentado (não os comentários de documentação), ordene os métodos e verifique se os escopos de visibilidade estão adequados.
 
 30. Mostre em sala, para avaliação, estes procedimentos concluídos. Veja os prazos da atividade no Moodle.
 

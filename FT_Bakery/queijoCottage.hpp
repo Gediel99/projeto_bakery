@@ -18,7 +18,7 @@ class CottageCheese : public Cheese
    private:
       string marca;   
    public:
-      CottageCheese(string, string, int, double);
+      CottageCheese(string, string, float, double);
       virtual string getDescricao();
    };
    

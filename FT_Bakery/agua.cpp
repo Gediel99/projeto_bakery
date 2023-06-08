@@ -19,6 +19,6 @@ Water::Water(string tipo, string marca, int unidades, double valor) : Liquid(uni
 
 string Water::getDescricao()
     {
-        return ("Agua " + tipo + " - Marca " + marca + " - " + Liquid::getDescricao());
+        return ("Agua " + tipo + " - " + marca + " - " + Liquid::getDescricao());
     };
 /* fim de arquivo */

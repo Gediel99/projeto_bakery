@@ -8,18 +8,18 @@
 #include <string>
 
 #include "liquido.hpp"
-#include "refri.hpp"
+#include "refrigerante.hpp"
 
 using namespace std;
 
-Soda::Soda(string tipo, string marca, int unidades, double valor) : Liquid(unidades,valor)
+Soda::Soda(string sabor, string marca, int unidades, double valor) : Liquid(unidades,valor)
 {
-    this->tipo = tipo;
+    this->sabor = sabor;
     this->marca = marca;
 };
 
 string Soda::getDescricao()
 {
-    return ("Refrigerante "+ tipo +" - " + marca + " - " + Liquid::getDescricao());
+    return ("Refrigerante de " + sabor + " - " + marca + " - " + Liquid::getDescricao());
 };
 /* fim de arquivo */

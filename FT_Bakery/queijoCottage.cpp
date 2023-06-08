@@ -11,14 +11,14 @@
 
 using namespace std;
 
-CottageCheese::CottageCheese( string tipo, string marca, int unidades, double valor) : Cheese(tipo,unidades, valor)
+CottageCheese::CottageCheese( string tipo, string marca, float peso, double valor) : Cheese(tipo, marca, peso, valor)
    {
    this->marca = marca;
    };
    
 string CottageCheese::getDescricao()
    { 
-   return ("Queijo " + Cheese::getDescricao() + " - " + marca ); 
+   return (Cheese::getDescricao()); 
    };
    
 /* fim de arquivo */

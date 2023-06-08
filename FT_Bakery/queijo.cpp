@@ -11,15 +11,16 @@
 
 using namespace std;
 
-Cheese::Cheese(string type, int unidades, double valor) : Food(valor)
+Cheese::Cheese(string type, string marca, float peso, double valor) : Food(valor)
    {
    this->tipo = type;
-   this->unidades = unidades;
+   this->marca = marca;
+   this->peso = peso;
    };
    
 string Cheese::getDescricao()
    { 
-   return (tipo + " - " + to_string(unidades) + " un/pacote."); 
+   return ("Queijo " + tipo + " - " + marca + " - " + to_string(peso) + " g."); 
    };
    
 /* fim de arquivo */

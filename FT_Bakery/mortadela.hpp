@@ -16,7 +16,7 @@ using namespace std;
 class Mortadella : public Food
    {
    private:
-      string tipo;
+      string marca;
       float peso;
       
    public:

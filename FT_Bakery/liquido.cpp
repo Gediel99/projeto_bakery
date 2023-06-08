@@ -18,7 +18,7 @@ Liquid::Liquid(int unidades, double valor) : Food(valor)
    
 string Liquid::getDescricao()
    { 
-   return (to_string(unidades) + " un/pacote"); 
+   return (to_string(unidades) + " unidades.");
    };
 
 /* fim de arquivo */

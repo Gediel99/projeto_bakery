@@ -11,15 +11,15 @@
 
 using namespace std;
 
-Mortadella::Mortadella(string tipo, float peso, double valor) : Food(valor)
+Mortadella::Mortadella(string marca, float peso, double valor) : Food(valor)
    {
-   this->tipo = tipo;
+   this->marca = marca;
    this->peso = peso;
    };
    
 string Mortadella::getDescricao()
    { 
-   return ("Mortadela " + tipo + " - " + to_string(peso) + " Kg."); 
+   return ("Mortadela - " + marca + " - " + to_string(peso) + " g.");
    };
    
 /* fim de arquivo */

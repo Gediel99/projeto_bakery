@@ -21,7 +21,7 @@ Cracker::Cracker(string tipo, int unidades, double valor) : Food(valor)
    
 string Cracker::getDescricao()
    { 
-   return ("Bolacha " + tipo + " - " + to_string(unidades) + " un/pacote."); 
+   return ("Bolacha " + tipo + " - " + to_string(unidades) + " unidades."); 
    };
    
 /* fim de arquivo */

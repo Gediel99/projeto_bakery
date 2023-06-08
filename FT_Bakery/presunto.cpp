@@ -11,15 +11,15 @@
 
 using namespace std;
 
-Ham::Ham(string tipo, float peso, double valor) : Food(valor)
+Ham::Ham(string marca, float peso, double valor) : Food(valor)
    {
-   this->tipo = tipo;
+   this->marca = marca;
    this->peso = peso;
    };
    
 string Ham::getDescricao()
    { 
-   return ("Presunto " + tipo + " - " + to_string(peso) + " Kg."); 
+   return ("Presunto - " + marca + " - " + to_string(peso) + " g."); 
    };
    
 /* fim de arquivo */

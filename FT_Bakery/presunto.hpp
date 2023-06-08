@@ -16,7 +16,7 @@ using namespace std;
 class Ham : public Food
    {
    private:
-      string tipo;
+      string marca;
       float peso;
       
    public:

@@ -19,7 +19,7 @@ BeerSour::BeerSour(string tipo, string marca, int unidades, double valor) : Beer
 
 string BeerSour::getDescricao()
     {
-        return(tipo + " - " + Beer::getDescricao());
+        return("Cerveja " + tipo + " - " + Beer::getDescricao());
     };
 
 /* fim de arquivo */
